@@ -20,7 +20,7 @@ window.MERRY_STATIC_GAMES = [
     id: "rocket-raid",
     name: "ROCKET RAID",
     subtitle: "Combat Racing",
-    image: "assets/rocket-raid.jpg",
+    image: "assets/rocket-raid-verified.jpg",
     status: "soon",
     description: "Floor the nitro, launch rockets, and fight for the finish line in explosive races.",
     tags: ["Racing", "Combat"],
