@@ -70,8 +70,10 @@
           <label><span id="label-product">Oyun / Uygulama</span><select id="contact-product"></select><input id="contact-appname" type="text" maxlength="100" hidden placeholder="Uygulama adı" /></label>
           <label><span id="label-topic">Konu</span><select id="contact-topic"><option value="complaint">Şikâyet / Hata</option><option value="suggestion">Öneri</option><option value="feedback">Görüş</option><option value="other">Diğer</option></select></label>
           <label><span id="label-message">Mesajın</span><textarea id="contact-message" rows="6" maxlength="4000" required placeholder="Mesajınızı yazın..."></textarea></label>
+          <input class="contact-honeypot" id="contact-website" type="text" autocomplete="off" tabindex="-1" aria-hidden="true" name="_honey" />
           <button type="submit" id="contact-submit">E-posta taslağını aç ↗</button>
-          <p id="contact-hint">E-posta uygulamanız açılacak; göndermeyi siz onaylayacaksınız.</p>
+          <p id="contact-hint">Mesajınız doğrudan MERRY STATIC ekibine iletilir; e-posta uygulaması açılmaz.</p>
+          <p id="contact-result" role="status" aria-live="polite" hidden></p>
         </form><a href="mailto:merrystaticgamesstudio@gmail.com">merrystaticgamesstudio@gmail.com</a>
       </div>
     </section>
