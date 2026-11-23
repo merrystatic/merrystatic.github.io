@@ -23,8 +23,8 @@
     ru:["О нас","Игры","Приложения","Оценить","Контакты"]
   };
   const labels={
-    tr:["Çok yakında","Bizi Puanla","Yayınlanan oyunlarımızı mağazalarda değerlendirebilirsiniz.","İletişim","Bize görüş ve önerilerini ilet.","Tür","Oyun / Uygulama","Konu","Mesajın","E-posta taslağını aç ↗","E-posta uygulamanız açılacak; göndermeyi siz onaylayacaksınız.","Oyun","Uygulama","Şikâyet / Hata","Öneri","Görüş","Diğer","Uygulama adı","Henüz yayınlanmadı","Mesajınızı yazın..."],
-    en:["Coming soon","Rate Us","Rate our released games in the app stores.","Contact","Send us your feedback and suggestions.","Type","Game / App","Topic","Your message","Open email draft ↗","Your email app opens; you approve sending.","Game","App","Complaint / Issue","Suggestion","Feedback","Other","App name","Not yet released","Write your message..."],
+    tr:["Çok yakında","Bizi Puanla","Yayınlanan oyunlarımızı mağazalarda değerlendirebilirsiniz.","İletişim","Bize görüş ve önerilerini ilet.","Tür","Oyun / Uygulama","Konu","Mesajın","Mesajı Gönder ↗","Mesajın doğrudan stüdyomuza iletilir; e-posta uygulaması açılmaz.","Oyun","Uygulama","Şikâyet / Hata","Öneri","Görüş","Diğer","Uygulama adı","Henüz yayınlanmadı","Mesajınızı yazın..."],
+    en:["Coming soon","Rate Us","Rate our released games in the app stores.","Contact","Send us your feedback and suggestions.","Type","Game / App","Topic","Your message","Send Message ↗","Your message is sent to our studio without opening an email app.","Game","App","Complaint / Issue","Suggestion","Feedback","Other","App name","Not yet released","Write your message..."],
     fr:["Bientôt","Évaluez-nous","Évaluez nos jeux disponibles.","Contact","Envoyez vos suggestions et commentaires.","Type","Jeu / App","Sujet","Votre message","Ouvrir le brouillon ↗","Vous confirmerez l’envoi dans votre messagerie.","Jeu","Application","Problème","Suggestion","Avis","Autre","Nom de l’application","Pas encore disponible","Écrivez votre message..."],
     de:["Demnächst","Bewerten","Bewerte unsere veröffentlichten Spiele.","Kontakt","Sende uns Vorschläge und Feedback.","Typ","Spiel / App","Thema","Deine Nachricht","E-Mail öffnen ↗","Du bestätigst den Versand.","Spiel","App","Problem","Vorschlag","Feedback","Sonstiges","App-Name","Noch nicht verfügbar","Schreibe deine Nachricht..."],
     es:["Muy pronto","Valóranos","Valora nuestros juegos publicados.","Contacto","Envíanos tus sugerencias y comentarios.","Tipo","Juego / App","Tema","Tu mensaje","Abrir correo ↗","Confirma el envío en tu correo.","Juego","Aplicación","Problema","Sugerencia","Opinión","Otro","Nombre de app","Aún no disponible","Escribe tu mensaje..."],
@@ -72,15 +72,59 @@
   menuBtn.addEventListener("click",()=>{const opened=!menu.classList.contains("is-open");menu.classList.toggle("is-open",opened);menuBtn.setAttribute("aria-expanded",String(opened));});
   window.addEventListener("hashchange",showPage);
   contactType.addEventListener("change",changeContactType);
-  document.getElementById("studio-contact-form").addEventListener("submit",e=>{
+  document.getElementById("studio-contact-form").addEventListener("submit",async e=>{
     e.preventDefault();
-    const msg=document.getElementById("contact-message").value.trim();if(!msg)return;
-    const typ=contactType.options[contactType.selectedIndex].text;
-    const name=contactType.value==="game"?product.value:appName.value.trim();
-    if(!name)return;
-    const subject="MERRY STATIC | "+typ+" | "+name+" | "+topic.options[topic.selectedIndex].text;
-    const body=typ+": "+name+"\n"+topic.options[topic.selectedIndex].text+"\n\n"+msg;
-    window.location.href="mailto:merrystaticgamesstudio@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+    const content=document.getElementById("contact-message").value.trim();
+    const result=document.getElementById("contact-result");
+    const send=document.getElementById("contact-submit");
+    const spam=document.getElementById("contact-website");
+    if(!content||spam.value)return;
+    const isGame=contactType.value==="game";
+    const productName=isGame?product.value:appName.value.trim();
+    if(!productName)return;
+    const selectedTopic=topic.options[topic.selectedIndex].textContent;
+    const selectedKind=contactType.options[contactType.selectedIndex].textContent;
+    const locale=lang;
+    const tr=locale==="tr";
+    result.hidden=false;result.className="";result.textContent=tr?"Mesaj gönderiliyor...":"Sending message...";
+    send.disabled=true;
+    const formData={
+      _subject:"MERRY STATIC | "+selectedKind+" | "+productName+" | "+selectedTopic,
+      _captcha:"true",
+      _honey:"",
+      origin:"https://merrystatic.github.io/",
+      language:locale,
+      category:selectedKind,
+      product:productName,
+      topic:selectedTopic,
+      message:content
+    };
+    try{
+      const response=await fetch("https://formsubmit.co/ajax/merrystaticgamesstudio@gmail.com",{
+        method:"POST",
+        headers:{"Content-Type":"application/json","Accept":"application/json"},
+        body:JSON.stringify(formData)
+      });
+      const data=await response.json();
+      const msg=String(data.message||"");
+      if(!response.ok || data.success===false || data.success==="false" || /error|fail/i.test(msg)){
+        throw new Error(msg||"Delivery service rejected the request");
+      }
+      if(/activat|confirm|verify|doğrula/i.test(msg)){
+        result.className="contact-result-pending";
+        result.textContent=tr?"İlk kurulum için e-posta adresi doğrulaması gerekiyor. Mesajın iletilmesi, form hizmetinden gelen etkinleştirme e-postasının onaylanmasına bağlıdır.":"Email activation is required before messages can be delivered. Please confirm the activation email.";
+      }else if(data.success===true || data.success==="true"){
+        result.className="contact-result-success";
+        result.textContent=tr?"Mesajın form hizmetine iletildi. Teşekkür ederiz!":"Your message was submitted. Thank you!";
+        document.getElementById("contact-message").value="";
+      }else{
+        result.className="contact-result-pending";
+        result.textContent=tr?"İstek alındı; e-posta teslimi henüz doğrulanamadı. Lütfen daha sonra tekrar kontrol et.":"Request received, but email delivery could not be confirmed.";
+      }
+    }catch(error){
+      result.className="contact-result-error";
+      result.textContent=tr?"Mesaj gönderilemedi. İnternet bağlantını kontrol edip tekrar dene.":"Message could not be sent. Please check your connection and try again.";
+    }finally{send.disabled=false;}
   });
   changeContactType();
   function render(){
