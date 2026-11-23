@@ -48,5 +48,16 @@ window.MERRY_STATIC_GAMES = [
     tags: ["Puzzle", "Brain"],
     googlePlay: "",
     appStore: ""
+  },
+  {
+    id: "rocket-raid",
+    name: "ROCKET RAID",
+    subtitle: "Combat Racing",
+    image: "assets/rocket-raid.webp",
+    status: "soon",
+    description: "Race fast. Fire rockets. Win the battle.",
+    tags: ["Racing", "Combat"],
+    googlePlay: "",
+    appStore: ""
   }
 ];
