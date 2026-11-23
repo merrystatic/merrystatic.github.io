@@ -32,6 +32,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Vida Bulmacası",
         "Her seferinde bir vida."
+      ],
+      "rocket-raid": [
+        "Silahlı Yarış",
+        "Nitroyu bas. Roketleri fırlat. Yarışı kazan."
       ]
     }
   },
@@ -68,6 +72,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Screw Puzzle",
         "One screw at a time."
+      ],
+      "rocket-raid": [
+        "Combat Racing",
+        "Race fast. Fire rockets. Win the battle."
       ]
     }
   },
@@ -104,6 +112,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Puzzle de vis",
         "Une vis à la fois."
+      ],
+      "rocket-raid": [
+        "Course de combat",
+        "Accélérez. Lancez des roquettes. Gagnez la course."
       ]
     }
   },
@@ -140,6 +152,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Schrauben-Puzzle",
         "Schraube für Schraube."
+      ],
+      "rocket-raid": [
+        "Kampfrennen",
+        "Gib Gas. Feuere Raketen ab. Gewinne das Rennen."
       ]
     }
   },
@@ -176,6 +192,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Rompecabezas de tornillos",
         "Un tornillo a la vez."
+      ],
+      "rocket-raid": [
+        "Carreras de combate",
+        "Acelera. Lanza cohetes. Gana la carrera."
       ]
     }
   },
@@ -212,6 +232,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Quebra-cabeça de parafusos",
         "Um parafuso de cada vez."
+      ],
+      "rocket-raid": [
+        "Corrida de combate",
+        "Acelere. Lance foguetes. Vença a corrida."
       ]
     }
   },
@@ -248,6 +272,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Puzzle Sekrup",
         "Satu sekrup setiap langkah."
+      ],
+      "rocket-raid": [
+        "Balapan Tempur",
+        "Melaju cepat. Tembakkan roket. Menangkan balapan."
       ]
     }
   },
@@ -284,6 +312,10 @@ window.MERRY_STATIC_TRANSLATIONS = {
       "unlokk": [
         "Головоломка с винтами",
         "Один винт за другим."
+      ],
+      "rocket-raid": [
+        "Боевые гонки",
+        "Ускоряйтесь. Запускайте ракеты. Побеждайте."
       ]
     }
   }
