@@ -107,13 +107,13 @@
       });
       const data=await response.json();
       const msg=String(data.message||"");
-      if(!response.ok || data.success===false || data.success==="false" || /error|fail/i.test(msg)){
-        throw new Error(msg||"Delivery service rejected the request");
-      }
       if(/activat|confirm|verify|doğrula/i.test(msg)){
         result.className="contact-result-pending";
-        result.textContent=tr?"İlk kurulum için e-posta adresi doğrulaması gerekiyor. Mesajın iletilmesi, form hizmetinden gelen etkinleştirme e-postasının onaylanmasına bağlıdır.":"Email activation is required before messages can be delivered. Please confirm the activation email.";
-      }else if(data.success===true || data.success==="true"){
+        result.textContent=tr?"E-posta teslimi için etkinleştirme gerekli. merrystaticgamesstudio@gmail.com gelen kutusuna gelen FormSubmit onay bağlantısı açılmalı.":"Email delivery requires activation. Please confirm the FormSubmit activation email sent to the studio inbox.";
+      }else if(!response.ok || data.success===false || data.success==="false" || /error|fail/i.test(msg)){
+        throw new Error(msg||"Delivery service rejected the request");
+      }
+      else if(data.success===true || data.success==="true"){
         result.className="contact-result-success";
         result.textContent=tr?"Mesajın form hizmetine iletildi. Teşekkür ederiz!":"Your message was submitted. Thank you!";
         document.getElementById("contact-message").value="";
