@@ -19,23 +19,23 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "games": {
       "chill-sort": [
         "Buz Topu Bulmacası",
-        "Renkleri sırala. Huzuru bul."
+        "Buzlu topları ustalıkla sırala, zorlu düzenleri çöz ve her hamlede yeni bir tatmin yakala."
       ],
       "blockbop": [
         "Blok Bulmacası",
-        "Renkli bloklar. Akıllı hamleler."
+        "Akıllı kombinasyonlar kur, tahtayı temizle ve kendi rekorunun peşinden git."
       ],
       "mirrolux": [
         "Ayna ve Lazer Bulmacası",
-        "Işığı yansıt. Yolu çöz."
+        "Aynaları doğru açıya getir, ışığa yön ver ve her bölümde zekânı konuştur."
       ],
       "unlokk": [
         "Vida Bulmacası",
-        "Her seferinde bir vida."
+        "Hamlelerini önceden planla, vidaları serbest bırak ve mekanik sırları çöz."
       ],
       "rocket-raid": [
-        "Silahlı Yarış",
-        "Nitroyu bas. Roketleri fırlat. Yarışı kazan."
+        "Silahlı Arcade Yarış",
+        "Nitroyu ateşle, roketleri fırlat ve patlamalar arasında bitiş çizgisine ilk ulaş."
       ]
     }
   },
@@ -59,23 +59,23 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "games": {
       "chill-sort": [
         "Ice Ball Puzzle",
-        "Sort the colors. Find your calm."
+        "Master icy color sorting, solve tricky layouts, and enjoy every satisfying move."
       ],
       "blockbop": [
         "Block Puzzle",
-        "Colorful blocks. Clever moves."
+        "Build clever combos, clear the board, and chase your next high score."
       ],
       "mirrolux": [
         "Mirror & Laser Puzzle",
-        "Reflect light. Solve the path."
+        "Turn mirrors, bend beams, and light your way through ingenious puzzles."
       ],
       "unlokk": [
         "Screw Puzzle",
-        "One screw at a time."
+        "Think ahead, free every screw, and crack each mechanical challenge."
       ],
       "rocket-raid": [
         "Combat Racing",
-        "Race fast. Fire rockets. Win the battle."
+        "Ignite the nitro, unleash your rockets, and blast through chaos to the finish line."
       ]
     }
   },
@@ -99,23 +99,23 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "games": {
       "chill-sort": [
         "Puzzle de boules glacées",
-        "Triez les couleurs. Détendez-vous."
+        "Triez des boules glacées, déjouez les niveaux et savourez chaque réussite."
       ],
       "blockbop": [
         "Puzzle de blocs",
-        "Des blocs colorés et des coups malins."
+        "Créez des combinaisons astucieuses, videz le plateau et battez vos records."
       ],
       "mirrolux": [
         "Puzzle de miroirs et lasers",
-        "Réfléchissez la lumière. Trouvez la solution."
+        "Orientez les miroirs, déviez les rayons et révélez la solution."
       ],
       "unlokk": [
         "Puzzle de vis",
-        "Une vis à la fois."
+        "Anticipez chaque mouvement, libérez les vis et résolvez les défis mécaniques."
       ],
       "rocket-raid": [
         "Course de combat",
-        "Accélérez. Lancez des roquettes. Gagnez la course."
+        "Activez le nitro, lancez des roquettes et foncez vers la victoire."
       ]
     }
   },
@@ -139,23 +139,23 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "games": {
       "chill-sort": [
         "Eiskugel-Puzzle",
-        "Sortiere Farben. Finde Ruhe."
+        "Sortiere eisige Kugeln, meistere knifflige Muster und genieße jeden Erfolg."
       ],
       "blockbop": [
         "Block-Puzzle",
-        "Bunte Blöcke. Clevere Züge."
+        "Kombiniere clever, räume das Spielfeld ab und knacke deinen Rekord."
       ],
       "mirrolux": [
         "Spiegel- und Laser-Puzzle",
-        "Lenke das Licht. Finde den Weg."
+        "Drehe Spiegel, lenke Lichtstrahlen und löse raffinierte Rätsel."
       ],
       "unlokk": [
         "Schrauben-Puzzle",
-        "Schraube für Schraube."
+        "Plane voraus, löse jede Schraube und meistere mechanische Herausforderungen."
       ],
       "rocket-raid": [
         "Kampfrennen",
-        "Gib Gas. Feuere Raketen ab. Gewinne das Rennen."
+        "Zünde den Nitro, feuere Raketen ab und kämpfe dich bis zur Ziellinie."
       ]
     }
   },
@@ -178,24 +178,24 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "appStore": "App Store",
     "games": {
       "chill-sort": [
-        "Rompecabezas de bolas de hielo",
-        "Ordena colores. Encuentra la calma."
+        "Rompecabezas de bolas heladas",
+        "Ordena bolas heladas, supera desafíos y disfruta cada movimiento."
       ],
       "blockbop": [
         "Rompecabezas de bloques",
-        "Bloques de colores. Jugadas inteligentes."
+        "Crea combinaciones ingeniosas, despeja el tablero y supera tu récord."
       ],
       "mirrolux": [
         "Rompecabezas de espejos y láseres",
-        "Refleja la luz. Resuelve el camino."
+        "Gira los espejos, desvía los rayos y descubre la solución."
       ],
       "unlokk": [
         "Rompecabezas de tornillos",
-        "Un tornillo a la vez."
+        "Planea cada paso, libera los tornillos y supera retos mecánicos."
       ],
       "rocket-raid": [
         "Carreras de combate",
-        "Acelera. Lanza cohetes. Gana la carrera."
+        "Activa el nitro, dispara cohetes y cruza la meta entre explosiones."
       ]
     }
   },
@@ -218,24 +218,24 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "appStore": "App Store",
     "games": {
       "chill-sort": [
-        "Quebra-cabeça de bolas de gelo",
-        "Organize as cores. Relaxe."
+        "Quebra-cabeça de bolas geladas",
+        "Organize bolas geladas, vença desafios e aproveite cada jogada."
       ],
       "blockbop": [
         "Quebra-cabeça de blocos",
-        "Blocos coloridos. Jogadas inteligentes."
+        "Crie combinações inteligentes, limpe o tabuleiro e supere seu recorde."
       ],
       "mirrolux": [
         "Quebra-cabeça de espelhos e lasers",
-        "Reflita a luz. Descubra o caminho."
+        "Gire espelhos, desvie raios e ilumine o caminho da vitória."
       ],
       "unlokk": [
         "Quebra-cabeça de parafusos",
-        "Um parafuso de cada vez."
+        "Planeje cada movimento, solte os parafusos e vença desafios mecânicos."
       ],
       "rocket-raid": [
         "Corrida de combate",
-        "Acelere. Lance foguetes. Vença a corrida."
+        "Ative o nitro, lance foguetes e avance pelas explosões até a vitória."
       ]
     }
   },
@@ -259,23 +259,23 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "games": {
       "chill-sort": [
         "Puzzle Bola Es",
-        "Urutkan warna. Nikmati ketenangan."
+        "Susun bola es, taklukkan tantangan, dan nikmati setiap langkah memuaskan."
       ],
       "blockbop": [
         "Puzzle Blok",
-        "Blok warna-warni. Langkah cerdas."
+        "Rancang kombo cerdas, bersihkan papan, dan pecahkan rekor baru."
       ],
       "mirrolux": [
         "Puzzle Cermin dan Laser",
-        "Pantulkan cahaya. Temukan jalannya."
+        "Putar cermin, arahkan sinar, dan pecahkan teka-teki cahaya."
       ],
       "unlokk": [
         "Puzzle Sekrup",
-        "Satu sekrup setiap langkah."
+        "Rencanakan langkah, lepaskan sekrup, dan taklukkan tantangan mekanis."
       ],
       "rocket-raid": [
         "Balapan Tempur",
-        "Melaju cepat. Tembakkan roket. Menangkan balapan."
+        "Nyalakan nitro, tembakkan roket, dan melesat menuju garis finis."
       ]
     }
   },
@@ -299,23 +299,23 @@ window.MERRY_STATIC_TRANSLATIONS = {
     "games": {
       "chill-sort": [
         "Головоломка с ледяными шарами",
-        "Сортируйте цвета. Расслабляйтесь."
+        "Сортируйте ледяные шары, решайте задачи и наслаждайтесь каждой победой."
       ],
       "blockbop": [
         "Блочная головоломка",
-        "Яркие блоки. Умные ходы."
+        "Создавайте комбинации, очищайте поле и побейте свой рекорд."
       ],
       "mirrolux": [
         "Головоломка с зеркалами и лазерами",
-        "Отражайте свет. Найдите путь."
+        "Поворачивайте зеркала, направляйте лучи и находите решение."
       ],
       "unlokk": [
         "Головоломка с винтами",
-        "Один винт за другим."
+        "Планируйте ходы, освобождайте винты и решайте механические задачи."
       ],
       "rocket-raid": [
         "Боевые гонки",
-        "Ускоряйтесь. Запускайте ракеты. Побеждайте."
+        "Включайте нитро, запускайте ракеты и мчитесь к финишу сквозь взрывы."
       ]
     }
   }
