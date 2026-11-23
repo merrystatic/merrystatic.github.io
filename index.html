@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#fbfaf6" />
+  <meta name="description" content="Merry Static Games Studios — small games, big fun. Discover our mobile games and what's coming next." />
+  <meta property="og:title" content="MERRY STATIC | Small Games. Big Fun." />
+  <meta property="og:description" content="Discover colorful, creative mobile games from Merry Static Games Studios." />
+  <meta property="og:type" content="website" />
+  <title>MERRY STATIC — Games Studios</title>
+  <link rel="icon" type="image/webp" href="assets/chill-sort.webp" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="games.js"></script>
+  <script defer src="translations.js"></script>
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <div class="page-glow glow-a" aria-hidden="true"></div>
+  <div class="page-glow glow-b" aria-hidden="true"></div>
+  <header class="topbar wrap">
+    <a class="home-mark" href="#top" aria-label="Merry Static home"><span class="mark-spark">✦</span> MERRY STATIC <span class="mark-dot">.</span></a>
+    <div class="language-picker">
+      <label class="language-label" for="language">🌐 <span id="language-caption">Dil</span></label>
+      <select class="language-select" id="language" aria-label="Sayfa dili">
+        <option value="tr" selected>🇹🇷 Türkçe</option>
+        <option value="en">🇬🇧 English</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="pt">🇵🇹 Português</option>
+        <option value="id">🇮🇩 Indonesia</option>
+        <option value="ru">🇷🇺 Русский</option>
+      </select>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-label="Studio introduction">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> INDEPENDENT MOBILE GAME STUDIO <span class="eyebrow-star">✦</span></div>
+      <img class="studio-logo" src="assets/studio-logo.webp" alt="MERRY STATIC Games Studio" fetchpriority="high" />
+      <h1 data-en="Small Games. <em>Big Fun.</em>" data-tr="Küçük Oyunlar. <em>Büyük Eğlence.</em>">Small Games. <em>Big Fun.</em></h1>
+      <p class="hero-description" data-en="We create colorful, creative mobile games made for everyday moments of fun. Discover your next favorite." data-tr="Günlük anları eğlenceye dönüştüren renkli, yaratıcı mobil oyunlar geliştiriyoruz. Yeni favorini keşfet.">We create colorful, creative mobile games made for everyday moments of fun. Discover your next favorite.</p>
+      <a class="hero-cta" href="#games" data-en="Explore our games <span aria-hidden='true'>↘</span>" data-tr="Oyunlarımızı keşfet <span aria-hidden='true'>↘</span>">Explore our games <span aria-hidden="true">↘</span></a>
+      <div class="tiny-deco deco-one" aria-hidden="true">✳</div><div class="tiny-deco deco-two" aria-hidden="true">✦</div>
+    </section>
+    <section class="games-section wrap" id="games">
+      <div class="section-heading"><div><span class="section-kicker" data-en="DISCOVER THE FUN" data-tr="EĞLENCEYİ KEŞFET">DISCOVER THE FUN</span><h2 data-en="Our Games<span class='period'>.</span>" data-tr="Oyunlarımız<span class='period'>.</span>">Our Games<span class="period">.</span></h2></div><div class="count" id="game-count">01 LIVE · 03 COMING SOON</div></div>
+      <div id="live-games" class="live-grid" aria-label="Available games"></div>
+      <div class="coming-heading"><div><span class="small-burst">✴</span> <span data-en="COMING SOON" data-tr="YAKINDA">COMING SOON</span></div><div class="coming-line"></div><span class="coming-count" id="soon-count">03 UPCOMING</span></div>
+      <div id="soon-games" class="coming-grid" aria-label="Upcoming games"></div>
+    </section>
+    <section class="studio-note wrap"><div class="note-icon">✳</div><div><h2 data-en="More worlds are on the way." data-tr="Yeni dünyalar yolda.">More worlds are on the way.</h2><p data-en="We're always building something new. Check back for future releases." data-tr="Sürekli yeni oyunlar geliştiriyoruz. Gelecek yayınlar için bizi takip et.">We're always building something new. Check back for future releases.</p></div><div class="note-arrows" aria-hidden="true">↗↗</div></section>
+  </main>
+  <footer class="footer wrap"><div class="footer-brand">MERRY STATIC<span>✦</span></div><p>© <span id="year"></span> MERRY STATIC GAMES STUDIOS</p><span data-en="Made for play." data-tr="Eğlence için üretildi.">Made for play.</span></footer>
+</body>
+</html>
