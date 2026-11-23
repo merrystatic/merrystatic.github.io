@@ -20,6 +20,14 @@
   <div class="page-glow glow-b" aria-hidden="true"></div>
   <header class="topbar wrap">
     <a class="home-mark" href="#top" aria-label="Merry Static home"><span class="mark-spark">✦</span> MERRY STATIC <span class="mark-dot">.</span></a>
+    <nav class="studio-nav" id="studio-nav" aria-label="Studio navigation">
+      <a href="#about" data-nav-link="about">Hakkımızda</a>
+      <a href="#games" data-nav-link="games">Oyunlar</a>
+      <a href="#apps" data-nav-link="apps">Uygulamalar</a>
+      <a href="#rate" data-nav-link="rate">Bizi Puanla</a>
+      <a href="#contact" data-nav-link="contact">İletişim</a>
+    </nav>
+    <button class="studio-menu-btn" id="studio-menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="studio-nav">☰</button>
     <div class="language-picker">
       <label class="language-label" for="language">🌐 <span id="language-caption">Dil</span></label>
       <select class="language-select" id="language" aria-label="Sayfa dili">
@@ -35,6 +43,7 @@
     </div>
   </header>
   <main id="top">
+    <div id="games-page" class="site-panel">
     <section class="hero wrap" aria-label="Studio introduction">
       <div class="eyebrow"><span class="eyebrow-dot"></span> INDEPENDENT MOBILE GAME STUDIO <span class="eyebrow-star">✦</span></div>
       <img class="studio-logo" src="assets/studio-logo.webp" alt="MERRY STATIC Games Studio" fetchpriority="high" />
@@ -50,6 +59,22 @@
       <div id="soon-games" class="coming-grid" aria-label="Upcoming games"></div>
     </section>
     <section class="studio-note wrap"><div class="note-icon">✳</div><div><h2 data-en="More worlds are on the way." data-tr="Yeni dünyalar yolda.">More worlds are on the way.</h2><p data-en="We're always building something new. Check back for future releases." data-tr="Sürekli yeni oyunlar geliştiriyoruz. Gelecek yayınlar için bizi takip et.">We're always building something new. Check back for future releases.</p></div><div class="note-arrows" aria-hidden="true">↗↗</div></section>
+    </div>
+    <section id="about-page" class="site-panel studio-subpage wrap" hidden><div class="studio-subpage-card"><h1 id="about-title">Çok yakında</h1></div></section>
+    <section id="apps-page" class="site-panel studio-subpage wrap" hidden><div class="studio-subpage-card"><h1 id="apps-title">Çok yakında</h1></div></section>
+    <section id="rate-page" class="site-panel studio-subpage wrap" hidden><div class="studio-subpage-card"><h1 id="rate-title">Bizi Puanla</h1><p id="rate-description">Yayınlanan oyunlarımızı mağazalarda değerlendirebilirsiniz.</p><div id="rate-list"></div></div></section>
+    <section id="contact-page" class="site-panel studio-subpage wrap" hidden>
+      <div class="studio-subpage-card"><h1 id="contact-title">İletişim</h1><p id="contact-intro">Bize görüş ve önerilerini ilet.</p>
+        <form id="studio-contact-form">
+          <label><span id="label-type">Tür</span><select id="contact-type"><option value="game">Oyun</option><option value="app">Uygulama</option></select></label>
+          <label><span id="label-product">Oyun / Uygulama</span><select id="contact-product"></select><input id="contact-appname" type="text" maxlength="100" hidden placeholder="Uygulama adı" /></label>
+          <label><span id="label-topic">Konu</span><select id="contact-topic"><option value="complaint">Şikâyet / Hata</option><option value="suggestion">Öneri</option><option value="feedback">Görüş</option><option value="other">Diğer</option></select></label>
+          <label><span id="label-message">Mesajın</span><textarea id="contact-message" rows="6" maxlength="4000" required placeholder="Mesajınızı yazın..."></textarea></label>
+          <button type="submit" id="contact-submit">E-posta taslağını aç ↗</button>
+          <p id="contact-hint">E-posta uygulamanız açılacak; göndermeyi siz onaylayacaksınız.</p>
+        </form><a href="mailto:merrystaticgamesstudio@gmail.com">merrystaticgamesstudio@gmail.com</a>
+      </div>
+    </section>
   </main>
   <footer class="footer wrap"><div class="footer-brand">MERRY STATIC<span>✦</span></div><p>© <span id="year"></span> MERRY STATIC GAMES STUDIOS</p><span data-en="Made for play." data-tr="Eğlence için üretildi.">Made for play.</span></footer>
 </body>
