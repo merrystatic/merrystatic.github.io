@@ -12,3 +12,11 @@
 @media(max-width:1080px){.studio-nav{gap:8px}.studio-nav a{font-size:11px}.topbar{gap:11px}.language-label{display:none}.language-select{width:140px}}
 @media(max-width:900px){.topbar{position:relative}.studio-nav{display:none;position:absolute;left:0;right:0;top:calc(100% - 1px);z-index:100;background:#fff;border:1px solid var(--border);border-radius:0 0 18px 18px;box-shadow:var(--shadow);padding:10px 16px;flex-direction:column;align-items:stretch;gap:0;margin:0}.studio-nav.is-open{display:flex}.studio-nav a{font-size:14px;padding:14px 8px}.studio-nav a.is-active:after{width:44px;right:auto;left:8px;bottom:6px}.studio-menu-btn{display:block;order:2;margin-left:auto}.language-picker{order:3}}
 @media(max-width:560px){.topbar{gap:6px}.home-mark{margin-right:auto}.studio-menu-btn{padding:8px 9px}.language-select{width:123px;max-width:123px}.studio-subpage{padding:35px 0 55px}.studio-subpage-card{border-radius:20px}.rate-item{align-items:flex-start;flex-direction:column}}
+
+/* Direct contact delivery status */
+.contact-honeypot{position:absolute!important;left:-9999px!important;opacity:0!important;width:1px!important;height:1px!important;pointer-events:none!important}
+#contact-result{padding:12px 14px;border-radius:10px;font-size:13px;font-weight:700;line-height:1.5}
+#contact-result.contact-result-success{background:#eaffda;color:#285b20}
+#contact-result.contact-result-error{background:#ffe9e9;color:#8a2525}
+#contact-result.contact-result-pending{background:#fff3df;color:#6e4e13}
+#studio-contact-form button:disabled{opacity:.55;cursor:wait}
