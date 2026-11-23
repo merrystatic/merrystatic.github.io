@@ -11,9 +11,20 @@ window.MERRY_STATIC_GAMES = [
     subtitle: "Ice Ball Puzzle",
     image: "assets/chill-sort.webp",
     status: "live",
-    description: "Sort the colors. Find your calm.",
+    description: "An icy twist on sorting. Plan each move, master colorful puzzles, and enjoy every satisfying win.",
     tags: ["Puzzle", "Relaxing"],
     googlePlay: "https://play.google.com/store/apps/details?id=com.merrystatic.chillsort",
+    appStore: ""
+  },
+  {
+    id: "rocket-raid",
+    name: "ROCKET RAID",
+    subtitle: "Combat Racing",
+    image: "assets/rocket-raid.webp",
+    status: "soon",
+    description: "Floor the nitro, launch rockets, and fight for the finish line in explosive races.",
+    tags: ["Racing", "Combat"],
+    googlePlay: "",
     appStore: ""
   },
   {
@@ -22,7 +33,7 @@ window.MERRY_STATIC_GAMES = [
     subtitle: "Block Puzzle",
     image: "assets/blockbop.webp",
     status: "soon",
-    description: "Colorful blocks. Clever moves.",
+    description: "Build clever combos, clear the board, and chase your next high score.",
     tags: ["Puzzle", "Strategy"],
     googlePlay: "",
     appStore: ""
@@ -33,7 +44,7 @@ window.MERRY_STATIC_GAMES = [
     subtitle: "Mirror & Laser Puzzle",
     image: "assets/mirrolux.webp",
     status: "soon",
-    description: "Reflect light. Solve the path.",
+    description: "Bend beams through clever reflections and illuminate the path to victory.",
     tags: ["Logic", "Light"],
     googlePlay: "",
     appStore: ""
@@ -44,19 +55,8 @@ window.MERRY_STATIC_GAMES = [
     subtitle: "Screw Puzzle",
     image: "assets/unlokk.webp",
     status: "soon",
-    description: "One screw at a time.",
+    description: "Think ahead, free every screw, and unlock the next mechanical challenge.",
     tags: ["Puzzle", "Brain"],
-    googlePlay: "",
-    appStore: ""
-  },
-  {
-    id: "rocket-raid",
-    name: "ROCKET RAID",
-    subtitle: "Combat Racing",
-    image: "assets/rocket-raid.webp",
-    status: "soon",
-    description: "Race fast. Fire rockets. Win the battle.",
-    tags: ["Racing", "Combat"],
     googlePlay: "",
     appStore: ""
   }
