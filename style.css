@@ -41,3 +41,18 @@
 .app-roadmap{font-size:12px;line-height:1.6;color:#6a7a70;margin:0 0 16px}
 .app-slogan{font:800 14px 'Outfit',sans-serif;color:#0f6231;margin:0}
 @media(max-width:740px){.studio-apps-page{padding:36px 0 60px}.app-showcase{grid-template-columns:1fr;padding:22px;gap:22px;border-radius:21px}.app-art{padding:20px}.app-art img{width:min(100%,230px)}.app-details h2{font-size:38px}.app-subtitle{font-size:15px}.app-description{font-size:14px}}
+
+/* Desktop header: improve nav readability and balance empty space.
+   Mobile uses its original hamburger navigation unchanged. */
+@media (min-width:901px){
+  .topbar{justify-content:flex-start;gap:clamp(14px,1.8vw,28px)}
+  .home-mark{flex:0 0 auto;white-space:nowrap}
+  .studio-nav{margin-left:clamp(12px,4vw,62px);gap:clamp(10px,1.5vw,24px);flex:0 1 auto;min-width:0}
+  .studio-nav a{font-size:14px;line-height:1.25;padding:12px 2px}
+  .language-picker{margin-left:auto;flex:0 0 auto}
+}
+@media (min-width:901px) and (max-width:1050px){
+  .studio-nav{margin-left:15px;gap:9px}
+  .studio-nav a{font-size:13px}
+  .topbar{gap:12px}
+}
