@@ -170,7 +170,7 @@
     "appSoon": "01 СКОРО"
   }
 };
-  const apps=[{id:"ms-listcep",name:"MS ListCep",image:"assets/ms-listcep.webp",status:"soon",googlePlay:"",appStore:""}];
+  const apps=[{id:"ms-listcep",name:"MS ListCep",image:"assets/ms-listcep-hd.svg",status:"soon",googlePlay:"",appStore:""}];
   const pages=["about","games","apps","rate","contact"];
   const menu=document.getElementById("studio-nav");
   const menuBtn=document.getElementById("studio-menu-btn");
