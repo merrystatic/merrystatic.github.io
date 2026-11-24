@@ -20,3 +20,24 @@
 #contact-result.contact-result-error{background:#ffe9e9;color:#8a2525}
 #contact-result.contact-result-pending{background:#fff3df;color:#6e4e13}
 #studio-contact-form button:disabled{opacity:.55;cursor:wait}
+
+/* MS ListCep application showcase */
+.studio-apps-page{padding:58px 0 95px;min-height:calc(100vh - 210px)}
+.app-section-heading{margin-bottom:8px}
+.app-section-heading h1{font:900 clamp(36px,5vw,56px)/1.08 'Outfit',sans-serif;letter-spacing:-.045em;margin:13px 0}
+.app-section-heading h1 .period{color:var(--pink)}
+.apps-intro{color:var(--muted);margin:0 0 28px;font-size:15px}
+.apps-list{display:grid;gap:24px}
+.app-showcase{display:grid;grid-template-columns:minmax(220px,.9fr) minmax(0,1.6fr);gap:clamp(20px,4vw,58px);align-items:center;padding:clamp(22px,3.5vw,42px);border:1px solid var(--border);border-radius:28px;background:linear-gradient(130deg,#e9ffec 0%,#fff 43%,#f8fbff 100%);box-shadow:var(--shadow)}
+.app-art{padding:clamp(16px,3vw,30px);border-radius:24px;background:radial-gradient(circle at 47% 38%,#cbffd7 0%,#e8fff0 48%,#f5fff6 73%);display:grid;place-items:center;min-width:0}
+.app-art img{display:block;width:min(100%,280px);height:auto;aspect-ratio:1;object-fit:contain;border-radius:19%;box-shadow:0 16px 28px rgba(2,80,36,.17)}
+.app-details{min-width:0}
+.app-status{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:100px;background:#edfff0;color:#08752b;border:1px solid #b8ecc8;font:800 12px 'Outfit',sans-serif;letter-spacing:.045em}
+.app-details h2{font:900 clamp(35px,4.1vw,54px)/1.06 'Outfit',sans-serif;letter-spacing:-.04em;margin:16px 0 5px}
+.app-subtitle{font:700 17px 'Outfit',sans-serif;color:#168143;margin:0 0 18px}
+.app-description{font-size:15px;line-height:1.75;color:#4d5b69;margin:0 0 18px}
+.app-chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.app-chips span{display:inline-flex;align-items:center;border:1px solid #dbe8df;background:#fff;border-radius:9px;padding:8px 10px;color:#254934;font:700 12px 'DM Sans',sans-serif}
+.app-roadmap{font-size:12px;line-height:1.6;color:#6a7a70;margin:0 0 16px}
+.app-slogan{font:800 14px 'Outfit',sans-serif;color:#0f6231;margin:0}
+@media(max-width:740px){.studio-apps-page{padding:36px 0 60px}.app-showcase{grid-template-columns:1fr;padding:22px;gap:22px;border-radius:21px}.app-art{padding:20px}.app-art img{width:min(100%,230px)}.app-details h2{font-size:38px}.app-subtitle{font-size:15px}.app-description{font-size:14px}}
